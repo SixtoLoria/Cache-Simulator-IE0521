@@ -3,6 +3,15 @@ import gzip
 from cache import *
 
 
+# Definir diferentes combinaciones de parámetros
+cache_capacities = [8, 16, 32, 64, 128]
+cache_assocs = [1, 2, 4, 8, 16]
+block_sizes = [16, 32, 64, 128]
+repl_policies = ['l', 'r']
+
+# Carpeta que contiene los archivos .gz
+trace_folder = 'traces/'
+
 parser = OptionParser()
 parser.add_option("-s", dest="cache_capacity")
 parser.add_option("-a", dest="cache_assoc")
