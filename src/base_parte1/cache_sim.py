@@ -2,6 +2,7 @@ from optparse import OptionParser
 import gzip
 from cache import *
 
+
 parser = OptionParser()
 parser.add_option("-s", dest="cache_capacity")
 parser.add_option("-a", dest="cache_assoc")
