@@ -1,6 +1,7 @@
 
 
 from math import log2, floor
+import random
 
 class cache:
     def __init__(self, cache_capacity, cache_assoc, block_size, repl_policy):
@@ -40,7 +41,47 @@ class cache:
         print(result_str)
 
     def access(self, access_type, address):
-        #Escriba aquí el código para procesar el acceso al caché
-        #La siguiente línea es solo para que funcione la prueba
-        #Quítela para implementar su código
-        print("Esto es un acceso")
+        """Maneja el acceso al cache
+
+        Args:
+            access_type (_type_): _description_
+            address (_type_): _description_
+
+        Returns:
+            Miss: Cantidad de misses generados
+        """
+        byte_offset = int(address % (2 ** self.byte_offset_size))  # Calcula el offset de bytes
+        index = int(floor(address / (2 ** self.byte_offset_size)) % (2 ** self.index_size))  # Calcula el índice
+        tag = int(floor(address / (2 ** (self.byte_offset_size + self.index_size))))  # Calcula la etiqueta
+        line = self.find(index, tag)  # Busca la línea en el caché
+        miss = False
+        if line == -1:  # Si la línea no está en el caché
+            self.bring_to_cache(index, tag)  # Trae la línea al caché
+            self.total_misses += 1
+            if access_type == "r":
+                self.total_read_misses += 1
+            else:
+                self.total_write_misses += 1
+            miss = True
+        self.total_access += 1
+        if access_type == "r":
+            self.total_reads += 1
+        else:
+            self.total_writes += 1
+        return miss
+
+    def find(self, index, tag):
+        """Busca una etiqueta en el conjunto dado
+
+        Args:
+            index (_type_): Indice del bloque buscado
+            tag (_type_): Etiqueta del bloque
+        """
+        for line in range(self.cache_assoc):
+            if self.valid_table[index][line] and (self.tag_table[index][line] == tag):
+                return line
+        return -1
+    
+    
+    
+    
