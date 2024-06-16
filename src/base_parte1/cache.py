@@ -41,9 +41,9 @@ class cache:
         read_miss_rate = "{:.3f}".format(read_miss_rate)            # Formatea la tasa de fallos de lectura
         write_miss_rate = (100.0 * self.total_write_misses) / self.total_writes  # Calcula la tasa de fallos de escritura
         write_miss_rate = "{:.3f}".format(write_miss_rate)  # Formatea la tasa de fallos de escritura
-        stats = (f"{self.total_misses},{miss_rate}%," +
-                 f"{self.total_read_misses},{read_miss_rate}%," +
-                 f"{self.total_write_misses},{write_miss_rate}%")
+        stats = (f"{self.total_misses} {miss_rate}%") #+
+                 #f"{self.total_read_misses},{read_miss_rate}%," +
+                 #f"{self.total_write_misses},{write_miss_rate}%")
         print(stats)
 
     def access(self, access_type, address):
