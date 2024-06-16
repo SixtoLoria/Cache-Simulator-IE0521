@@ -82,6 +82,31 @@ class cache:
                 return line
         return -1
     
-    
+    def bring_to_cache(self, index, tag):
+        empty_slot_found = False
+        for i in range(self.cache_assoc):
+            if not self.valid_table[index][i]:
+                self.valid_table[index][i] = True
+                self.tag_table[index][i] = tag
+                self.repl_table[index][i] = self.cache_assoc - 1
+                empty_slot_found = True
+                break
+
+        if not empty_slot_found:
+            # Politica LRU
+            if self.repl_policy == 'l':
+                lru_index = self.repl_table[index].index(min(self.repl_table[index]))
+                self.tag_table[index][lru_index] = tag
+                self.repl_table[index][lru_index] = self.cache_assoc - 1
+            # Politica Random
+            elif self.repl_policy == 'r':
+                random_index = random.randint(0, self.cache_assoc - 1)
+                self.tag_table[index][random_index] = tag
+                self.repl_table[index][random_index] = self.cache_assoc - 1
+
+        if self.repl_policy == 'l':
+            for i in range(self.cache_assoc):
+                if self.repl_table[index][i] != 0:
+                    self.repl_table[index][i] -= 1
     
     
