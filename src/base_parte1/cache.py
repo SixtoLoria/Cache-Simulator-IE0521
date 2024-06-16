@@ -33,12 +33,18 @@ class cache:
         print("\tTamaño de Bloque:\t\t\t"+str(self.block_size)+"B")
         print("\tPolítica de Reemplazo:\t\t\t"+str(self.repl_policy))
 
-    def print_stats(self):
+    def print_stats(self):  # Imprime las estadísticas de la simulación
         print("Resultados de la simulación")
-        miss_rate = (100.0*self.total_misses) / self.total_access
-        miss_rate = "{:.3f}".format(miss_rate)
-        result_str = str(self.total_misses)+","+miss_rate+"%"
-        print(result_str)
+        miss_rate = (100.0 * self.total_misses) / self.total_access  # Calcula la tasa de fallos
+        miss_rate = "{:.3f}".format(miss_rate)                      # Formatea la tasa de fallos
+        read_miss_rate = (100.0 * self.total_read_misses) / self.total_reads  # Calcula la tasa de fallos de lectura
+        read_miss_rate = "{:.3f}".format(read_miss_rate)            # Formatea la tasa de fallos de lectura
+        write_miss_rate = (100.0 * self.total_write_misses) / self.total_writes  # Calcula la tasa de fallos de escritura
+        write_miss_rate = "{:.3f}".format(write_miss_rate)  # Formatea la tasa de fallos de escritura
+        stats = (f"{self.total_misses},{miss_rate}%," +
+                 f"{self.total_read_misses},{read_miss_rate}%," +
+                 f"{self.total_write_misses},{write_miss_rate}%")
+        print(stats)
 
     def access(self, access_type, address):
         """Maneja el acceso al cache
