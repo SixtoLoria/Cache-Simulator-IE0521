@@ -23,7 +23,9 @@ trace_folder = 'traces/'
 
 # Archivo de salida para los resultados
 output_file = 'cache_simulation_results.txt'
+
 def run_simulation(capacity, assoc, block_size, policy, trace_path):
+    print(f"Running simulation with Capacity: {capacity}kB, Assoc: {assoc}, Block size: {block_size}B, Policy: {policy}")
     # Inicializar la caché con los parámetros dados
     cache_instance = cache(capacity, assoc, block_size, policy)
     
@@ -45,9 +47,11 @@ with open(output_file, 'w') as out_fh:
     for trace_file in os.listdir(trace_folder):
         if trace_file.endswith('.gz'):
             trace_path = os.path.join(trace_folder, trace_file)
+            print(f"Processing trace file: {trace_file}")
 
             # Variar capacidad
             for capacity in cache_capacities:
+                print(f"  Varying cache capacity: {capacity}kB")
                 stats = run_simulation(capacity, default_assoc, default_block_size, default_policy, trace_path)
                 out_fh.write(f"Trace file: {trace_file}, Capacity: {capacity}kB, Assoc: {default_assoc}, Block size: {default_block_size}B, Policy: {default_policy}\n")
                 out_fh.write(stats + "\n")
@@ -55,6 +59,7 @@ with open(output_file, 'w') as out_fh:
             
             # Variar asociatividad
             for assoc in cache_assocs:
+                print(f"  Varying cache associativity: {assoc}")
                 stats = run_simulation(default_capacity, assoc, default_block_size, default_policy, trace_path)
                 out_fh.write(f"Trace file: {trace_file}, Capacity: {default_capacity}kB, Assoc: {assoc}, Block size: {default_block_size}B, Policy: {default_policy}\n")
                 out_fh.write(stats + "\n")
@@ -62,6 +67,7 @@ with open(output_file, 'w') as out_fh:
             
             # Variar tamaño de bloque
             for block_size in block_sizes:
+                print(f"  Varying block size: {block_size}B")
                 stats = run_simulation(default_capacity, default_assoc, block_size, default_policy, trace_path)
                 out_fh.write(f"Trace file: {trace_file}, Capacity: {default_capacity}kB, Assoc: {default_assoc}, Block size: {block_size}B, Policy: {default_policy}\n")
                 out_fh.write(stats + "\n")
@@ -69,6 +75,7 @@ with open(output_file, 'w') as out_fh:
             
             # Variar política de reemplazo
             for policy in repl_policies:
+                print(f"  Varying replacement policy: {policy}")
                 stats = run_simulation(default_capacity, default_assoc, default_block_size, policy, trace_path)
                 out_fh.write(f"Trace file: {trace_file}, Capacity: {default_capacity}kB, Assoc: {default_assoc}, Block size: {default_block_size}B, Policy: {policy}\n")
                 out_fh.write(stats + "\n")
