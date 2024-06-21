@@ -39,6 +39,7 @@ class cache:
         miss_rate = "{:.3f}".format(miss_rate)
         result_str = str(self.total_misses)+" "+miss_rate+"%"
         print(result_str)
+        return result_str # para poder automatizar
 
     def access(self, access_type, address):
         """Maneja el acceso al cache
