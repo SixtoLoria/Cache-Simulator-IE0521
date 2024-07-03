@@ -1,13 +1,11 @@
-
-
-from math import log2, floor
+from math import log2
 import random
 
 class cache:
     def __init__(self, cache_capacity, cache_assoc, block_size, repl_policy):
         #Escriba aquí el init de la clase
-        self.total_access = 0
-        self.total_misses = 0
+        # self.total_access = 0
+        # self.total_misses = 0
         self.total_reads = 0            # Inicializa el total de lecturas
         self.total_read_misses = 0      # Inicializa el total de fallos de lectura
         self.total_writes = 0           # Inicializa el total de escrituras
@@ -19,7 +17,7 @@ class cache:
         self.block_size = int(block_size)
         self.repl_policy = repl_policy
         
-        self.byte_offset_size = log2(self.block_size)                                                # Tamaño del offset en bytes
+        self.byte_offset_size = int(log2(self.block_size))                                                # Tamaño del offset en bytes
         self.num_sets = int((self.cache_capacity * 1024) / (self.block_size * self.cache_assoc))     # Número de conjuntos
         self.index_size = int(log2(self.num_sets))                                                   # Tamaño del índice
         self.valid_table = [[False for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]  # Tabla de validez
@@ -35,11 +33,14 @@ class cache:
 
     def print_stats(self):
         print("Resultados de la simulación")
-        miss_rate = (100.0*self.total_misses) / self.total_access
-        miss_rate = "{:.3f}".format(miss_rate)
-        result_str = str(self.total_misses)+" "+miss_rate+"%"
-        print(result_str)
-        return result_str # para poder automatizar
+        total_misses = self.total_read_misses + self.total_write_misses
+        total_access = self.total_reads + self.total_writes
+
+        miss_rate = 100*total_misses/total_access
+
+        result = f'{total_misses}, {miss_rate:.3f}%'
+        print(result)
+        return result # para poder automatizar
 
     def access(self, access_type, address):
         """Maneja el acceso al cache
@@ -51,9 +52,9 @@ class cache:
         Returns:
             Miss: Cantidad de misses generados
         """
-        byte_offset = int(address % (2 ** self.byte_offset_size))  # Calcula el offset de bytes
-        index = int(floor(address / (2 ** self.byte_offset_size)) % (2 ** self.index_size))  # Calcula el índice
-        tag = int(floor(address / (2 ** (self.byte_offset_size + self.index_size))))  # Calcula la etiqueta
+
+        index =  (address >> self.byte_offset_size) & (self.num_sets - 1)
+        tag = address >> (self.byte_offset_size + self.index_size)
 
         set_number = self.find(index, tag)  # buscar el tag dentro del index
 
@@ -64,7 +65,7 @@ class cache:
             self.bring_to_cache(index, tag)
             miss = True
             
-            self.total_misses += 1
+            # self.total_misses += 1
 
             match access_type:
                 case 'r': self.total_read_misses += 1
@@ -77,7 +78,7 @@ class cache:
                 block = self.repl_table[index].pop(block_index)
                 self.repl_table[index].insert(0, block)
 
-        self.total_access += 1
+        # self.total_access += 1
         match access_type:
             case 'r': self.total_reads += 1
             case 'w': self.total_writes += 1
@@ -96,6 +97,7 @@ class cache:
         for set_number in range(self.cache_assoc):
             if self.valid_table[index][set_number] and (self.tag_table[index][set_number] == tag):
                 block_is_in_set = set_number
+                break
 
         return block_is_in_set
     
