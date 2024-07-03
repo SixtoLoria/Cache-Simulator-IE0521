@@ -11,7 +11,7 @@ parser.add_option("-t", dest="TRACE_FILE")
 
 (options, args) = parser.parse_args()
 
-cache = cache(options.cache_capacity, options.cache_assoc, options.block_size, options.repl_policy)
+cache = cache(options.cache_capacity.strip(), options.cache_assoc.strip(), options.block_size.strip(), options.repl_policy.strip())
 
 i = 0 #SOLO PARA DEBUG
 with gzip.open(options.TRACE_FILE,'rt') as trace_fh:

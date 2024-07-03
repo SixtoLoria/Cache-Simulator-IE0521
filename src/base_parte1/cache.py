@@ -24,7 +24,7 @@ class cache:
         self.index_size = int(log2(self.num_sets))                                                   # Tamaño del índice
         self.valid_table = [[False for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]  # Tabla de validez
         self.tag_table = [[0 for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]        # Tabla de etiquetas
-        self.repl_table = [[0 for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]       # Tabla de reemplazo
+        self.repl_table = [[x for x in range(self.cache_assoc)] for _ in range(self.num_sets)]       # Tabla de reemplazo
 
     def print_info(self):
         print("Parámetros del caché:")
@@ -54,21 +54,34 @@ class cache:
         byte_offset = int(address % (2 ** self.byte_offset_size))  # Calcula el offset de bytes
         index = int(floor(address / (2 ** self.byte_offset_size)) % (2 ** self.index_size))  # Calcula el índice
         tag = int(floor(address / (2 ** (self.byte_offset_size + self.index_size))))  # Calcula la etiqueta
-        line = self.find(index, tag)  # Busca la línea en el caché
+
+        set_number = self.find(index, tag)  # buscar el tag dentro del index
+
         miss = False
-        if line == -1:  # Si la línea no está en el caché
-            self.bring_to_cache(index, tag)  # Trae la línea al caché
-            self.total_misses += 1
-            if access_type == "r":
-                self.total_read_misses += 1
-            else:
-                self.total_write_misses += 1
+
+        # traer al cache el bloque en caso de miss
+        if set_number == -1:
+            self.bring_to_cache(index, tag)
             miss = True
-        self.total_access += 1
-        if access_type == "r":
-            self.total_reads += 1
+            
+            self.total_misses += 1
+
+            match access_type:
+                case 'r': self.total_read_misses += 1
+                case 'w': self.total_write_misses += 1
+        
+        # un acceso siempre actualiza el LRU, incluyendo hits
         else:
-            self.total_writes += 1
+            if self.repl_policy == 'l':
+                block_index = self.repl_table[index].index(set_number)
+                block = self.repl_table[index].pop(block_index)
+                self.repl_table[index].insert(0, block)
+
+        self.total_access += 1
+        match access_type:
+            case 'r': self.total_reads += 1
+            case 'w': self.total_writes += 1
+
         return miss
 
     def find(self, index, tag):
@@ -78,36 +91,45 @@ class cache:
             index (_type_): Indice del bloque buscado
             tag (_type_): Etiqueta del bloque
         """
-        for line in range(self.cache_assoc):
-            if self.valid_table[index][line] and (self.tag_table[index][line] == tag):
-                return line
-        return -1
+        block_is_in_set = -1
+
+        for set_number in range(self.cache_assoc):
+            if self.valid_table[index][set_number] and (self.tag_table[index][set_number] == tag):
+                block_is_in_set = set_number
+
+        return block_is_in_set
     
     def bring_to_cache(self, index, tag):
-        empty_slot_found = False
-        for i in range(self.cache_assoc):
-            if not self.valid_table[index][i]:
-                self.valid_table[index][i] = True
-                self.tag_table[index][i] = tag
-                self.repl_table[index][i] = self.cache_assoc - 1
-                empty_slot_found = True
-                break
 
-        if not empty_slot_found:
+        # buscar si hay un espacio vacío
+        index_has_space = False
+
+        for set_number in range(self.cache_assoc):
+            if not self.valid_table[index][set_number]:
+                index_has_space = True
+                break
+        
+        # asignar bloque en espacio vacío
+        if index_has_space:
+                self.valid_table[index][set_number] = True
+                self.tag_table[index][set_number] = tag
+
+                block_index = self.repl_table[index].index(set_number)
+                block = self.repl_table[index].pop(block_index)
+                self.repl_table[index].insert(0, block)
+
+        # si no, victimizar bloque
+        else:
             # Politica LRU
             if self.repl_policy == 'l':
-                lru_index = self.repl_table[index].index(min(self.repl_table[index]))
-                self.tag_table[index][lru_index] = tag
-                self.repl_table[index][lru_index] = self.cache_assoc - 1
-            # Politica Random
-            elif self.repl_policy == 'r':
-                random_index = random.randint(0, self.cache_assoc - 1)
-                self.tag_table[index][random_index] = tag
-                self.repl_table[index][random_index] = self.cache_assoc - 1
+                block = self.repl_table[index].pop()
+                self.tag_table[index][block] = tag
+                self.repl_table[index].insert(0, block)
 
-        if self.repl_policy == 'l':
-            for i in range(self.cache_assoc):
-                if self.repl_table[index][i] != 0:
-                    self.repl_table[index][i] -= 1
+            # # Politica Random
+            # elif self.repl_policy == 'r':
+            #     random_index = random.randint(0, self.cache_assoc - 1)
+            #     self.tag_table[index][random_index] = tag
+            #     self.repl_table[index][random_index] = self.cache_assoc - 1
     
     
