@@ -1,7 +1,6 @@
 from optparse import OptionParser
 import gzip
 import sys
-import os
 from cache import *
 
 parser = OptionParser()
@@ -15,6 +14,7 @@ parser.add_option("--l3_s", dest="l3_s")
 parser.add_option("--l3_a", dest="l3_a")
 parser.add_option("-b", dest="block_size", default="64")
 parser.add_option("-t", dest="TRACE_FILE")
+parser.add_option("--csv", action="store_true", dest="csv")
 
 (options, args) = parser.parse_args()
 
@@ -66,15 +66,24 @@ with gzip.open(options.TRACE_FILE,'rt') as trace_fh:
         if is_l2_miss and options.has_l3:
             _ = l3_cache.access(access_type, address)
 
-trace, _ = os.path.basename(options.TRACE_FILE).split('-', 1)
 
-print(f'{trace}, L1, ', end='')
-l1_cache.print_stats()
 
-if options.has_l2:
-    print(f'{trace}, L2, ', end='')
-    l2_cache.print_stats()
+if options.csv:
+    result = l1_cache.get_stats_csv()
 
-if options.has_l3:
-    print(f'{trace}, L3, ', end='')
-    l3_cache.print_stats()
+    if options.has_l2:
+        result = f'{result},{l2_cache.get_stats_csv()}'
+
+    if options.has_l3:
+        result = f'{result},{l3_cache.get_stats_csv()}'
+    
+    print(result)
+
+else:
+    l1_cache.print_stats()
+
+    if options.has_l2:
+        l2_cache.print_stats()
+
+    if options.has_l3:
+        l3_cache.print_stats()

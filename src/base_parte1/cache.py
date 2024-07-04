@@ -22,7 +22,9 @@ class cache:
         self.index_size = int(log2(self.num_sets))                                                   # Tamaño del índice
         self.valid_table = [[False for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]  # Tabla de validez
         self.tag_table = [[0 for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]        # Tabla de etiquetas
-        self.repl_table = [[x for x in range(self.cache_assoc)] for _ in range(self.num_sets)]       # Tabla de reemplazo
+        if self.repl_policy == 'l':
+            self.repl_table = [[x for x in range(self.cache_assoc)] for _ in range(self.num_sets)]       # Tabla de reemplazo
+        random.seed(10)
 
     def print_info(self):
         print("Parámetros del caché:")
@@ -38,9 +40,17 @@ class cache:
 
         miss_rate = 100*total_misses/total_access
 
-        result = f'{total_misses}, {miss_rate:.3f}%'
+        result = f'{total_misses} {miss_rate:.3f}%'
         print(result)
         return result # para poder automatizar
+
+    def print_stats_csv(self):
+        total_misses = self.total_read_misses + self.total_write_misses
+        total_access = self.total_reads + self.total_writes
+
+        miss_rate = 100*total_misses/total_access
+
+        print(f'{total_misses},{miss_rate:.3f}')
 
     def access(self, access_type, address):
         """Maneja el acceso al cache
@@ -113,9 +123,10 @@ class cache:
         
         # asignar bloque en espacio vacío
         if index_has_space:
-                self.valid_table[index][set_number] = True
-                self.tag_table[index][set_number] = tag
+            self.valid_table[index][set_number] = True
+            self.tag_table[index][set_number] = tag
 
+            if self.repl_policy == 'l':
                 block_index = self.repl_table[index].index(set_number)
                 block = self.repl_table[index].pop(block_index)
                 self.repl_table[index].insert(0, block)
@@ -128,10 +139,9 @@ class cache:
                 self.tag_table[index][block] = tag
                 self.repl_table[index].insert(0, block)
 
-            # # Politica Random
-            # elif self.repl_policy == 'r':
-            #     random_index = random.randint(0, self.cache_assoc - 1)
-            #     self.tag_table[index][random_index] = tag
-            #     self.repl_table[index][random_index] = self.cache_assoc - 1
+            # Politica Random
+            if self.repl_policy == 'r':
+                random_block = random.randint(0, self.cache_assoc - 1)
+                self.tag_table[index][random_block] = tag
     
     

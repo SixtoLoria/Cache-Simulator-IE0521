@@ -32,15 +32,23 @@ class cache:
         print("\tPolítica de Reemplazo:\t\t\t"+str(self.repl_policy))
 
     def print_stats(self):
-        # print("Resultados de la simulación")
+        print("Resultados de la simulación")
         total_misses = self.total_read_misses + self.total_write_misses
         total_access = self.total_reads + self.total_writes
 
         miss_rate = 100*total_misses/total_access
-        
-        result = f'{total_misses}, {miss_rate:.3f}%'
+
+        result = f'{total_misses} {miss_rate:.3f}%'
         print(result)
         return result # para poder automatizar
+
+    def get_stats_csv(self):
+        total_misses = self.total_read_misses + self.total_write_misses
+        total_access = self.total_reads + self.total_writes
+
+        miss_rate = 100*total_misses/total_access
+
+        return f'{total_misses},{miss_rate:.3f}'
 
     def access(self, access_type, address):
         """Maneja el acceso al cache
@@ -73,10 +81,9 @@ class cache:
         
         # un acceso siempre actualiza el LRU, incluyendo hits
         else:
-            if self.repl_policy == 'l':
-                block_index = self.repl_table[index].index(set_number)
-                block = self.repl_table[index].pop(block_index)
-                self.repl_table[index].insert(0, block)
+            block_index = self.repl_table[index].index(set_number)
+            block = self.repl_table[index].pop(block_index)
+            self.repl_table[index].insert(0, block)
 
         # self.total_access += 1
         match access_type:
@@ -113,12 +120,12 @@ class cache:
         
         # asignar bloque en espacio vacío
         if index_has_space:
-                self.valid_table[index][set_number] = True
-                self.tag_table[index][set_number] = tag
+            self.valid_table[index][set_number] = True
+            self.tag_table[index][set_number] = tag
 
-                block_index = self.repl_table[index].index(set_number)
-                block = self.repl_table[index].pop(block_index)
-                self.repl_table[index].insert(0, block)
+            block_index = self.repl_table[index].index(set_number)
+            block = self.repl_table[index].pop(block_index)
+            self.repl_table[index].insert(0, block)
 
         # si no, victimizar bloque
         else:
@@ -127,5 +134,3 @@ class cache:
                 block = self.repl_table[index].pop()
                 self.tag_table[index][block] = tag
                 self.repl_table[index].insert(0, block)
-    
-    
