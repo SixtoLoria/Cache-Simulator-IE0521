@@ -4,6 +4,7 @@
 
 Este repositorio está organizado de la siguiente manera.
 
+```
 .
 ├── results                  directorio de destino de todos los resultados.
 ├── src
@@ -14,6 +15,7 @@ Este repositorio está organizado de la siguiente manera.
 ├── README.md                este archivo.
 ├── single_cache.sh          script en bash para correr simulaciones del caché de un nivel.
 └── test.sh                  script en bash para generar resultados de la guía.
+```
 
 ## Simulaciones (manual)
 Las simulaciones se pueden correr de forma manual. El simulador utiliza los mismos
