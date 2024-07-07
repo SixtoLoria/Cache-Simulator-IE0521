@@ -17,14 +17,18 @@ class cache:
         self.block_size = int(block_size)
         self.repl_policy = repl_policy
         
-        self.byte_offset_size = int(log2(self.block_size))                                                # Tamaño del offset en bytes
-        self.num_sets = int((self.cache_capacity * 1024) / (self.block_size * self.cache_assoc))     # Número de conjuntos
+        self.byte_offset_size = int(log2(self.block_size))                                           # Tamaño del offset en bytes
+        self.num_sets = int((self.cache_capacity * 1024) / (self.block_size * self.cache_assoc))     # Número de set
         self.index_size = int(log2(self.num_sets))                                                   # Tamaño del índice
         self.valid_table = [[False for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]  # Tabla de validez
         self.tag_table = [[0 for _ in range(self.cache_assoc)] for _ in range(self.num_sets)]        # Tabla de etiquetas
+
+        # la idea con LRU es implementarlo como una cola con la posibilidad de mover un elemento al final de la cola.
+        # la primera posición de esta lista es el bloque MRU y la última posición de la lista es el bloque LRU.
         if self.repl_policy == 'l':
-            self.repl_table = [[x for x in range(self.cache_assoc)] for _ in range(self.num_sets)]       # Tabla de reemplazo
-        random.seed(10)
+            self.repl_table = [[x for x in range(self.cache_assoc)] for _ in range(self.num_sets)]       # Tabla de reemplazo (válido solo para LRU, con random no se necesario)
+
+        random.seed(10) # utilizar semillas para que los resultados sean reproducibles.
 
     def print_info(self):
         print("Parámetros del caché:")
@@ -63,6 +67,7 @@ class cache:
             Miss: Cantidad de misses generados
         """
 
+        # obtener el index y tag
         index =  (address >> self.byte_offset_size) & (self.num_sets - 1)
         tag = address >> (self.byte_offset_size + self.index_size)
 
@@ -84,6 +89,9 @@ class cache:
         # un acceso siempre actualiza el LRU, incluyendo hits
         else:
             if self.repl_policy == 'l':
+
+                # se busca en qué posición de la cola está el bloque y
+                # se mueve a la primera posición (es decir, hacerlo MRU)
                 block_index = self.repl_table[index].index(set_number)
                 block = self.repl_table[index].pop(block_index)
                 self.repl_table[index].insert(0, block)
@@ -127,6 +135,9 @@ class cache:
             self.tag_table[index][set_number] = tag
 
             if self.repl_policy == 'l':
+
+                # se busca en qué posición de la cola está el bloque y
+                # se mueve a la primera posición (es decir, hacerlo MRU)
                 block_index = self.repl_table[index].index(set_number)
                 block = self.repl_table[index].pop(block_index)
                 self.repl_table[index].insert(0, block)
@@ -135,6 +146,9 @@ class cache:
         else:
             # Politica LRU
             if self.repl_policy == 'l':
+
+                # victmiza el bloque que está en la última posición
+                # (LRU) y lo trae a la primera posición (MRU)
                 block = self.repl_table[index].pop()
                 self.tag_table[index][block] = tag
                 self.repl_table[index].insert(0, block)

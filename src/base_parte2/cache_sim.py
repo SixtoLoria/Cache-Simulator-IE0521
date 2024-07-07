@@ -13,11 +13,13 @@ parser.add_option("--l3", action="store_true", dest="has_l3")
 parser.add_option("--l3_s", dest="l3_s")
 parser.add_option("--l3_a", dest="l3_a")
 parser.add_option("-b", dest="block_size", default="64")
+parser.add_option("-r", dest="repl_policy")
 parser.add_option("-t", dest="TRACE_FILE")
-parser.add_option("--csv", action="store_true", dest="csv")
+parser.add_option("--csv", action="store_true", dest="csv") # opción para desplegar resultados en formato csv
 
 (options, args) = parser.parse_args()
 
+# manejo de errores
 if options.TRACE_FILE == None:
     print("ERROR: trace no proporcionado")
     sys.exit()
@@ -40,6 +42,8 @@ if options.has_l3 == None and (options.l3_s != None or options.l3_a != None):
     print("ERROR: debe utilizar la bandera --l3")
     sys.exit()
 
+
+# instanciar cachés
 l1_cache = cache(options.l1_s, options.l1_a, options.block_size, 'l')
 
 if options.has_l2:
@@ -54,9 +58,9 @@ with gzip.open(options.TRACE_FILE,'rt') as trace_fh:
         access_type, hex_str_address  = line.split(" ")
         address = int(hex_str_address, 16)
 
-        is_l1_miss = None
-        is_l2_miss = None
-        is_l3_miss = None
+        is_l1_miss = False
+        is_l2_miss = False
+        is_l3_miss = False
 
         is_l1_miss = l1_cache.access(access_type, address)
 

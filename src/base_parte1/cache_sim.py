@@ -8,7 +8,7 @@ parser.add_option("-a", dest="cache_assoc")
 parser.add_option("-b", dest="block_size")
 parser.add_option("-r", dest="repl_policy")
 parser.add_option("-t", dest="TRACE_FILE")
-parser.add_option("--csv", action="store_true", dest="csv")
+parser.add_option("--csv", action="store_true", dest="csv") # opción para desplegar resultados en formato csv
 
 (options, args) = parser.parse_args()
 
