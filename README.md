@@ -54,6 +54,11 @@ escriba en terminal `./single_cache.sh a`. Ahora, si solo se desea generar datos
 de todas las configuraciónes del caché con tres niveles, escriba en terminal
 `./multi_cache.sh 3`.
 
+Si aparece un error de permisos con los script, ejecute 
+`chmod +x single_cache.sh`
+`chmod +x multi_cache.sh`
+para habilitar permisos de ejecución.
+
 ### Formato de los resultados
 Los resultados son desplegados en formato csv.
 
