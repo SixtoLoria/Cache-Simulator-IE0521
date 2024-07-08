@@ -35,6 +35,12 @@ class cache:
         print("\tPolítica de Reemplazo:\t\t\t"+str(self.repl_policy))
 
     def print_stats(self):
+        """Funcion que imprime y retorna los resultados
+
+        Returns:
+            results: int
+            Resultados de total misses y miss rate
+        """
         print("Resultados de la simulación")
         total_misses = self.total_read_misses + self.total_write_misses
         total_access = self.total_reads + self.total_writes
@@ -46,6 +52,9 @@ class cache:
         return result # para poder automatizar
 
     def get_stats_csv(self):
+        """
+        Imprime los resultados de forma que puedan ser automatizados en CSV   
+        """
         total_misses = self.total_read_misses + self.total_write_misses
         total_access = self.total_reads + self.total_writes
 
@@ -57,13 +66,12 @@ class cache:
         """Maneja el acceso al cache
 
         Args:
-            access_type (_type_): _description_
-            address (_type_): _description_
+            access_type (int): tipo de acceso al cache
+            address (int): direccion de acceso
 
         Returns:
             Miss: Cantidad de misses generados
         """
-
         # obtener el index y el tag
         index =  (address >> self.byte_offset_size) & (self.num_sets - 1)
         tag = address >> (self.byte_offset_size + self.index_size)
@@ -102,8 +110,8 @@ class cache:
         """Busca una etiqueta en el conjunto dado
 
         Args:
-            index (_type_): Indice del bloque buscado
-            tag (_type_): Etiqueta del bloque
+            index (int): Indice del bloque buscado
+            tag (int): Etiqueta del bloque
         """
         block_is_in_set = -1
 
@@ -115,7 +123,12 @@ class cache:
         return block_is_in_set
     
     def bring_to_cache(self, index, tag):
+        """Se encarga de implementar las politicas de remplazo del cache
 
+        Args:
+            index (int): Indice del bloque buscado
+            tag (int): Etiqueta del bloque
+        """
         # buscar si hay un espacio vacío
         index_has_space = False
 

@@ -1,0 +1,972 @@
+----- Changing cache capacity -----
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+5962 0.596%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+5123 0.512%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3834 0.383%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+2814 0.281%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+2760 0.276%
+----- Changing cache associativity -----
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+7091 0.709%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+4101 0.410%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+3876 0.388%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3834 0.383%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+3885 0.389%
+----- Changing block size -----
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+13350 1.335%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+7187 0.719%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3834 0.383%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+2081 0.208%
+----- Changing replacement policy -----
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3834 0.383%
+Trace file: 481.wrf-1170B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+4468 0.447%
+----- Changing cache capacity -----
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+----- Changing cache associativity -----
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+6676 0.668%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+4692 0.469%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+3968 0.397%
+----- Changing block size -----
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+15830 1.583%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+7922 0.792%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+1990 0.199%
+----- Changing replacement policy -----
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+3968 0.397%
+Trace file: 437.leslie3d-134B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+4358 0.436%
+----- Changing cache capacity -----
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+5119 0.512%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+4700 0.470%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4248 0.425%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+3757 0.376%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+3103 0.310%
+----- Changing cache associativity -----
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+5836 0.584%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+4606 0.461%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+4301 0.430%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4248 0.425%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+4200 0.420%
+----- Changing block size -----
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+8764 0.876%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+5777 0.578%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4248 0.425%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+3542 0.354%
+----- Changing replacement policy -----
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4248 0.425%
+Trace file: 435.gromacs-111B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+4700 0.470%
+----- Changing cache capacity -----
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+22154 2.215%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+22119 2.212%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+22083 2.208%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+22083 2.208%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+22083 2.208%
+----- Changing cache associativity -----
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+23826 2.383%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+22087 2.209%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+22083 2.208%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+22083 2.208%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+22083 2.208%
+----- Changing block size -----
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+75018 7.502%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+39729 3.973%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+22083 2.208%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+13260 1.326%
+----- Changing replacement policy -----
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+22083 2.208%
+Trace file: 433.milc-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+22350 2.235%
+----- Changing cache capacity -----
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+54928 5.493%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+25357 2.536%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+16065 1.607%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+13260 1.326%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+11697 1.170%
+----- Changing cache associativity -----
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+87220 8.722%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+84326 8.433%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+85452 8.545%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+16065 1.607%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+12023 1.202%
+----- Changing block size -----
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+50241 5.024%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+27735 2.773%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+16065 1.607%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+11265 1.127%
+----- Changing replacement policy -----
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+16065 1.607%
+Trace file: 410.bwaves-1963B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+26088 2.609%
+----- Changing cache capacity -----
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+11317 1.132%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+9333 0.933%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4097 0.410%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+3343 0.334%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+2960 0.296%
+----- Changing cache associativity -----
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+10465 1.046%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+7094 0.709%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+4504 0.450%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4097 0.410%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+3680 0.368%
+----- Changing block size -----
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+14708 1.471%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+7632 0.763%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4097 0.410%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+2286 0.229%
+----- Changing replacement policy -----
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4097 0.410%
+Trace file: 456.hmmer-191B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+5737 0.574%
+----- Changing cache capacity -----
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+----- Changing cache associativity -----
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+18615 1.861%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+17649 1.765%
+----- Changing block size -----
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+70583 7.058%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+35294 3.529%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+8826 0.883%
+----- Changing replacement policy -----
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17649 1.765%
+Trace file: 462.libquantum-1343B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+17795 1.780%
+----- Changing cache capacity -----
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+23729 2.373%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+21467 2.147%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+18860 1.886%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+15453 1.545%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+4754 0.475%
+----- Changing cache associativity -----
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+24342 2.434%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+19591 1.959%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+19086 1.909%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+18860 1.886%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+18662 1.866%
+----- Changing block size -----
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+9561 0.956%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+17694 1.769%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+18860 1.886%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+19963 1.996%
+----- Changing replacement policy -----
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+18860 1.886%
+Trace file: 401.bzip2-226B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+18454 1.845%
+----- Changing cache capacity -----
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+76096 7.610%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+72354 7.235%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+67734 6.773%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+61798 6.180%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+55180 5.518%
+----- Changing cache associativity -----
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+73165 7.316%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+70424 7.042%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+67836 6.784%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+67734 6.773%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+67457 6.746%
+----- Changing block size -----
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+96565 9.656%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+78884 7.888%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+67734 6.773%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+60452 6.045%
+----- Changing replacement policy -----
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+67734 6.773%
+Trace file: 450.soplex-247B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+71239 7.124%
+----- Changing cache capacity -----
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+36554 3.655%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+21201 2.120%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+6924 0.692%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+1742 0.174%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+1220 0.122%
+----- Changing cache associativity -----
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+15312 1.531%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+10952 1.095%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+8366 0.837%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+6924 0.692%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+6564 0.656%
+----- Changing block size -----
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+7404 0.740%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+6556 0.656%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+6924 0.692%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+9076 0.908%
+----- Changing replacement policy -----
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+6924 0.692%
+Trace file: 458.sjeng-1088B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+9263 0.926%
+----- Changing cache capacity -----
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+24090 2.409%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+22320 2.232%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+21639 2.164%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+21370 2.137%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+21333 2.133%
+----- Changing cache associativity -----
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+86183 8.618%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+24232 2.423%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+21681 2.168%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+21639 2.164%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+21479 2.148%
+----- Changing block size -----
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+78080 7.808%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+41006 4.101%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+21639 2.164%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+11183 1.118%
+----- Changing replacement policy -----
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+21639 2.164%
+Trace file: 403.gcc-16B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+28559 2.856%
+----- Changing cache capacity -----
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+22920 2.292%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+18982 1.898%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17978 1.798%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+17753 1.775%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+17753 1.775%
+----- Changing cache associativity -----
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+27302 2.730%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+26505 2.651%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+25213 2.521%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17978 1.798%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+17753 1.775%
+----- Changing block size -----
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+69706 6.971%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+35210 3.521%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17978 1.798%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+9353 0.935%
+----- Changing replacement policy -----
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+17978 1.798%
+Trace file: 459.GemsFDTD-1169B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+21909 2.191%
+----- Changing cache capacity -----
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+1282 0.128%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+471 0.047%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+235 0.024%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+234 0.023%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+234 0.023%
+----- Changing cache associativity -----
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+12824 1.282%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+878 0.088%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+297 0.030%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+235 0.024%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+237 0.024%
+----- Changing block size -----
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+526 0.053%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+340 0.034%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+235 0.024%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+233 0.023%
+----- Changing replacement policy -----
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+235 0.024%
+Trace file: 400.perlbench-41B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+236 0.024%
+----- Changing cache capacity -----
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+21166 2.117%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+14345 1.435%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4368 0.437%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+1133 0.113%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+991 0.099%
+----- Changing cache associativity -----
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+13666 1.367%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+7402 0.740%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+5561 0.556%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4368 0.437%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+3657 0.366%
+----- Changing block size -----
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+6807 0.681%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+3861 0.386%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4368 0.437%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+4467 0.447%
+----- Changing replacement policy -----
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4368 0.437%
+Trace file: 444.namd-120B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+5228 0.523%
+----- Changing cache capacity -----
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+63246 6.325%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+33628 3.363%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11407 1.141%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+3230 0.323%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+1439 0.144%
+----- Changing cache associativity -----
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+33497 3.350%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+20133 2.013%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+14747 1.475%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11407 1.141%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+10592 1.059%
+----- Changing block size -----
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+18017 1.802%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+13136 1.314%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11407 1.141%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+11074 1.107%
+----- Changing replacement policy -----
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11407 1.141%
+Trace file: 445.gobmk-17B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+15819 1.582%
+----- Changing cache capacity -----
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+520 0.052%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+469 0.047%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+420 0.042%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+418 0.042%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+418 0.042%
+----- Changing cache associativity -----
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+483 0.048%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+440 0.044%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+420 0.042%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+420 0.042%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+420 0.042%
+----- Changing block size -----
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+1351 0.135%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+738 0.074%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+420 0.042%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+250 0.025%
+----- Changing replacement policy -----
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+420 0.042%
+Trace file: 454.calculix-104B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+420 0.042%
+----- Changing cache capacity -----
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+35913 3.591%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+35867 3.587%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+35867 3.587%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+35867 3.587%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+23809 2.381%
+----- Changing cache associativity -----
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+45288 4.529%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+36744 3.674%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+35867 3.587%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+35867 3.587%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+35867 3.587%
+----- Changing block size -----
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+63270 6.327%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+45724 4.572%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+35867 3.587%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+24989 2.499%
+----- Changing replacement policy -----
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+35867 3.587%
+Trace file: 470.lbm-1274B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+38637 3.864%
+----- Changing cache capacity -----
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+20714 2.071%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+20650 2.065%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+20642 2.064%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+20639 2.064%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+20637 2.064%
+----- Changing cache associativity -----
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+23191 2.319%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+20679 2.068%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+20644 2.064%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+20642 2.064%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+20641 2.064%
+----- Changing block size -----
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+36458 3.646%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+28832 2.883%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+20642 2.064%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+13666 1.367%
+----- Changing replacement policy -----
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+20642 2.064%
+Trace file: 483.xalancbmk-127B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+21873 2.187%
+----- Changing cache capacity -----
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+37171 3.717%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+29787 2.979%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+25001 2.500%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+12368 1.237%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+2918 0.292%
+----- Changing cache associativity -----
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+31524 3.152%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+26293 2.629%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+24832 2.483%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+25001 2.500%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+25338 2.534%
+----- Changing block size -----
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+41400 4.140%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+31895 3.189%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+25001 2.500%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+18098 1.810%
+----- Changing replacement policy -----
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+25001 2.500%
+Trace file: 453.povray-887B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+26219 2.622%
+----- Changing cache capacity -----
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+111595 11.159%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+110372 11.037%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+107254 10.725%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+100313 10.031%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+93056 9.306%
+----- Changing cache associativity -----
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+108020 10.802%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+106950 10.695%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+107141 10.714%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+107254 10.725%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+107586 10.759%
+----- Changing block size -----
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+131010 13.101%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+137416 13.742%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+107254 10.725%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+108355 10.835%
+----- Changing replacement policy -----
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+107254 10.725%
+Trace file: 429.mcf-184B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+107525 10.752%
+----- Changing cache capacity -----
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+28140 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+28139 2.814%
+----- Changing cache associativity -----
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+30249 3.025%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+28139 2.814%
+----- Changing block size -----
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+112252 11.225%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+56179 5.618%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+14109 1.411%
+----- Changing replacement policy -----
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+28139 2.814%
+Trace file: 465.tonto-1769B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+28370 2.837%
+----- Changing cache capacity -----
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+37468 3.747%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+22185 2.219%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11729 1.173%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+3264 0.326%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+1184 0.118%
+----- Changing cache associativity -----
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+36143 3.614%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+20316 2.032%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+14819 1.482%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11729 1.173%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+10149 1.015%
+----- Changing block size -----
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+10959 1.096%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+10637 1.064%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11729 1.173%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+12152 1.215%
+----- Changing replacement policy -----
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11729 1.173%
+Trace file: 416.gamess-875B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+11475 1.147%
+----- Changing cache capacity -----
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+2855 0.285%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+557 0.056%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+555 0.056%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+555 0.056%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+555 0.056%
+----- Changing cache associativity -----
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+5350 0.535%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+867 0.087%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+581 0.058%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+555 0.056%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+555 0.056%
+----- Changing block size -----
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+2060 0.206%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+1044 0.104%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+555 0.056%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+311 0.031%
+----- Changing replacement policy -----
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+555 0.056%
+Trace file: 464.h264ref-30B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+590 0.059%
+----- Changing cache capacity -----
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+4765 0.476%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+4640 0.464%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4449 0.445%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+3716 0.372%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+2866 0.287%
+----- Changing cache associativity -----
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+5998 0.600%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+4749 0.475%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+4789 0.479%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4449 0.445%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+4487 0.449%
+----- Changing block size -----
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+7408 0.741%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+5442 0.544%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4449 0.445%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+3890 0.389%
+----- Changing replacement policy -----
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4449 0.445%
+Trace file: 473.astar-153B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+5044 0.504%
+----- Changing cache capacity -----
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+15856 1.586%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+12627 1.263%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11943 1.194%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+11364 1.136%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+10660 1.066%
+----- Changing cache associativity -----
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+22693 2.269%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+13275 1.327%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+12179 1.218%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11943 1.194%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+11930 1.193%
+----- Changing block size -----
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+34498 3.450%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+19752 1.975%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11943 1.194%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+8039 0.804%
+----- Changing replacement policy -----
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+11943 1.194%
+Trace file: 482.sphinx3-1100B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+14122 1.412%
+----- Changing cache capacity -----
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+91543 9.154%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+73374 7.337%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+27971 2.797%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+17547 1.755%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+16512 1.651%
+----- Changing cache associativity -----
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+55645 5.564%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+45323 4.532%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+37568 3.757%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+27971 2.797%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+22034 2.203%
+----- Changing block size -----
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+33787 3.379%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+26114 2.611%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+27971 2.797%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+39869 3.987%
+----- Changing replacement policy -----
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+27971 2.797%
+Trace file: 471.omnetpp-188B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+37236 3.724%
+----- Changing cache capacity -----
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 8kB, Assoc: 8, Block size: 64B, Policy: l
+110294 11.029%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 16kB, Assoc: 8, Block size: 64B, Policy: l
+63487 6.349%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4344 0.434%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 64kB, Assoc: 8, Block size: 64B, Policy: l
+3717 0.372%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 128kB, Assoc: 8, Block size: 64B, Policy: l
+2882 0.288%
+----- Changing cache associativity -----
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 1, Block size: 64B, Policy: l
+57423 5.742%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 2, Block size: 64B, Policy: l
+12930 1.293%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 4, Block size: 64B, Policy: l
+11778 1.178%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4344 0.434%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 16, Block size: 64B, Policy: l
+4205 0.420%
+----- Changing block size -----
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 16B, Policy: l
+16435 1.643%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 32B, Policy: l
+8270 0.827%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4344 0.434%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 128B, Policy: l
+13844 1.384%
+----- Changing replacement policy -----
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: l
+4344 0.434%
+Trace file: 436.cactusADM-1804B.trace.txt.gz, Capacity: 32kB, Assoc: 8, Block size: 64B, Policy: r
+9783 0.978%
